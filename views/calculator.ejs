@@ -1,0 +1,57 @@
+<%- include("partials/header"); -%>
+<div class="calculator-div">
+
+
+<h1>Kindly enter accurate details:</h1>
+<form class="" action="/calculator" method="post">
+  <div class="form-group">
+    <label>Name:</label>
+    <input class="form-control" type="text" name="personName">
+    <label>Age:</label>
+    <input class="form-control" name="personAge"></input>
+    <br>
+    <label for="gender">Select you gender: </label>
+    <select name="gender">
+	     <option value="none" selected>Gender</option>
+	     <option value="male">Male</option>
+	     <option value="female">Female</option>
+	     <option value="other">other</option>
+    </select>
+    <br>
+    <!-- <label>Approximate latitude:</label>
+    <input class="form-control" name="lat">
+    <label>Approximate longitude:</label>
+    <input class="form-control" name="lon">
+    <label for="breathing">Do you suffer from any breathing issues? </label>
+    <select name="breathing">
+	     <option value="none" selected>Yes/No</option>
+	     <option value="yes">Yes</option>
+	     <option value="no">No</option>
+    </select> -->
+    <br>
+    <label>Weight (in kg):</label>
+    <input class="form-control" name="personWeight">
+    <label>Height (in cm):</label>
+    <input class="form-control" name="personHeight">
+    <label>Resting pulse rate:</label>
+    <input class="form-control" name="personPulse">
+    <label>Resting Systolic BP:</label>
+    <input class="form-control" name="personSysBP">
+    <label>Resting Diastolic BP:</label>
+    <input class="form-control" name="personDysBP">
+    <label>Respiratory rate:</label>
+    <input class="form-control" name="personResp"><br>
+    <h2>The following fields are optional:</h2>
+    <label>Fasting blood sugar level: </label>
+    <input class="form-control" name="personSugar" value="Default">
+    <label>Total Cholesterol level (HDL+LDL):</label>
+    <input class="form-control" name="personCholesterol" value="Default">
+    <label>Sodium level:</label>
+    <input class="form-control" name="personSodium" value="Default">
+    <label>Calcium level(serum):</label>
+    <input class="form-control" name="personCalcium" value="Default">
+  </div>
+  <button class="btn btn-primary" type="submit" name="button">Submit</button>
+</form>
+</div>
+<%- include("partials/footer"); -%>

@@ -1,0 +1,33 @@
+<%- include("partials/header"); -%>
+
+<div class="result-div">
+  <h1>Results:</h1>
+  <br>
+  <h4>Vaccination center ID:</h4>
+  <p><%=data.centerID%></p>
+  <h4>Vaccination center name:</h4>
+  <p><%=data.centerName%></p>
+  <h4>Vaccination center address:</h4>
+  <p><%=data.centerAddress%></p>
+  <h4>Time from:</h4>
+  <p><%=data.timeFrom%></p>
+  <h4>Time to:</h4>
+  <p><%=data.timeTo%></p>
+  <h4>Total vaccine doses available at center:</h4>
+  <p><%=data.totalAvail%></p>
+  <h4>No. of first doses available:</h4>
+  <p><%=data.availFirst%></p>
+  <h4>No. of second doses available:</h4>
+  <p><%=data.availSecond%></p>
+  <h4>Fee type (Whether paid or free):</h4>
+  <p><%=data.feeType%></p>
+  <h4>Fee amount:</h4>
+  <p>Rs. <%=data.fee%></p>
+  <h4>Min. age for vaccination at that center:</h4>
+  <p><%=data.minAge%></p>
+  <h4>Name of the vaccine whose doses are availabe available:</h4>
+  <p><%=data.vaccineName%></p>
+</div>
+<%- include("partials/footer"); -%>
+<!-- </body>
+</html> -->

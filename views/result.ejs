@@ -1,0 +1,44 @@
+<%- include("partials/header"); -%>
+
+<div class="result-div">
+  <h1>Results:</h1>
+  <br>
+  <h3>BMI: </h3>
+  <p><%=data.personBMI%> (<%=data.bmiRange%>)</p>
+  <h3>BMI Score(out of 10):</h3>
+  <p><%=data.bmiScore%></p>
+  <h3>Pulse score:</h3>
+  <p><%=data.pulseScore%></p>
+  <h3>Sugar level score:</h3>
+  <p><%=data.sugarScore%> (<%=data.diabetes%>)</p>
+  <h3>Cholesterol level score:</h3>
+  <p><%=data.cholesterolScore%> (<%=data.cholesterolRange%>)</p>
+  <h3>Sodium level score:</h3>
+  <p><%=data.sodiumScore%> (<%=data.sodiumRange%>)</p>
+  <h3>Respiratory rate score:</h3>
+  <p><%=data.respScore%> (<%=data.respRange%>)</p>
+  <h3>BP score:</h3>
+  <p><%=data.bpScore%> (<%=data.bpRange%>)</p>
+  <h3>Calcium level score:</h3>
+  <p><%=data.calciumScore%> (<%=data.calciumRange%>)</p>
+  <br>
+  <h2>Total score: <%=data.totalScore%>/100</h2>
+  <br>
+  <br>
+  <!-- <h2> <%=data.airQuality%> </h2> -->
+  <h2>Areas to work upon:</h2>
+  <ol>
+  <% if(data.toWork.length > 0){ %>
+      <% data.toWork.forEach(item => { %>
+          <li> <strong> <%= item %> </strong> </li>
+      <% }); %>
+  <% } %>
+  </ol>
+  <br>
+  <br>
+  <br>
+  <h3>*Kindly note that we have formulated these scores based on normal ranges for most individuals. We provide this data only for the user to get a quick overview of a their overall health. This in no way can be more accurate than a registered doctor's diagnosis*</h3>
+</div>
+<%- include("partials/footer"); -%>
+<!-- </body>
+</html> -->

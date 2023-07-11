@@ -1,0 +1,31 @@
+nav{
+    flex-direction: column;
+    height:auto;
+    z-index: 9;
+}
+.logo-text{
+    text-align: center;
+}
+.links ul li {
+    display:none;
+    margin:0;
+    padding:1rem;
+    transition:0.3s ease;
+}
+#home{
+    margin-bottom:2rem;
+    height:fit-content;
+}
+footer{
+    display:none;
+}
+section{
+    height:auto;
+}
+/* #menu-btn{
+    display:block;
+    margin-bottom: 1rem;
+}
+section{
+    padding:9rem;
+} */

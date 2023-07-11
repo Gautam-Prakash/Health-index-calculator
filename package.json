@@ -1,0 +1,18 @@
+{
+  "name": "iipproject",
+  "version": "1.0.0",
+  "description": "Health index calculator for IIP Project.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gautam Prakash",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "novelcovid": "^3.0.2",
+    "save": "^2.4.0"
+  }
+}
